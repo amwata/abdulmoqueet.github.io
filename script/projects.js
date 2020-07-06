@@ -29,6 +29,16 @@ var myProjects = [
     },
 
     {
+        isLive: true,
+        title: "TODO APP",
+        desc: "TODO APP using: NodeJS, Express, MongoDB, Mongoose.",
+        isotopeCategory: "node",
+        dataSrcThumb: "todo-app.png",
+        githubLink: "todo-app/",
+        liveUrl: "https://moqueet-todoapp.herokuapp.com/"
+    },
+
+    {
         isLive: false,
         title: "Institute Management System",
         desc: "A javaFX project, Using JavaFX framework, FXML as frontend. SQLite DataBase as backend",
@@ -40,7 +50,7 @@ var myProjects = [
     {
         isLive: false,
         title: "Find My Phone",
-        desc: "An Android App, using XML as frontend and JAVA as backend. I have used android.telephony api. This app can find a lost with just a SMS",
+        desc: "An Android App, using XML as frontend and JAVA as backend. I have used android.telephony api. This app can find a lost phone with just a SMS",
         isotopeCategory: "android",
         dataSrcThumb: "find_my_phone.png",
         githubLink: "FindMyPhone/"
