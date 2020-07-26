@@ -96,9 +96,10 @@ function generateMyProjects() {
 
             projects += `<div class="project-tile col-sm-6 col-md-4 ${myProjects[i].isotopeCategory}">
             <div class="card">
-                <div class="image" style="background-image: url(${"img/thumbs/"+myProjects[i].dataSrcThumb});" 
-                data-fancybox data-type="iframe" data-src="${myProjects[i].liveUrl}" href="javascript:;">
-                </div>
+
+                <a href="${myProjects[i].liveUrl}" target="_blank">
+                    <div class="image" style="background-image: url(${"img/thumbs/"+myProjects[i].dataSrcThumb});" ></div>
+                </a>
 
                 <div class="flex-wrapper">
                     <div class="project-desc-box">
@@ -107,7 +108,7 @@ function generateMyProjects() {
                     </div>
 
                     <div class="button-holder">
-                        <a class="button" data-fancybox data-type="iframe" data-src="${myProjects[i].liveUrl}" href="javascript:;">Live Preview</a>
+                        <a href="${myProjects[i].liveUrl}" class="button" target="_blank">Live Preview</a>
                         <a href="${"https://github.com/AbdulMoqueet/"+myProjects[i].githubLink}" class="button" target="_blank">Source Code</a>
                     </div>
                 </div>
